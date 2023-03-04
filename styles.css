@@ -1,2 +1,50 @@
+html {
+    --main-text-color: #171717;
+    --head-color:#404040;
+    --text-color: #737373;
+    --button-color:#0ea5e9;
+    background-color:#f5f5f5;
+}
+
+.main-container {
+    width: 1000px;
+    height: 900px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border: #171717;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    background-color: var(--button-color);
+    color: white;
+
+}
+
+.main-container-image {
+    height: 900px;  
+    width: 500px;
+    background-image: url(images/mountains-1.jpg);
+    background-size: cover;
+    background-position: top;
+    box-sizing: border-box;
+}
+
+.main-container-content {
+    height: 900px;  
+    width: 500px;
+    margin-left: 40px; 
+    margin-right: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+
 
 
