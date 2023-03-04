@@ -4,6 +4,7 @@ html {
     --text-color: #737373;
     --button-color:#0ea5e9;
     background-color:#f5f5f5;
+    font-family: 'Roboto', sans-serif;
 }
 
 .main-container {
@@ -12,24 +13,31 @@ html {
     margin: auto;
     margin-top: 80px;
     margin-bottom: 80px;
-    border: #171717;
-    border-width: 2px;
-    border-style: solid;
     border-radius: 8px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
+   
+
 }
 
 button {
     background-color: var(--button-color);
     color: white;
+    padding: 10px;
+    position: center;
+    border: var(--button-color);
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 14px;
+    font-weight: 600;
 
 }
 
 .main-container-image {
     height: 900px;  
-    width: 500px;
+    width: 530px;
     background-image: url(images/mountains-1.jpg);
     background-size: cover;
     background-position: top;
@@ -37,14 +45,92 @@ button {
 }
 
 .main-container-content {
-    height: 900px;  
-    width: 500px;
-    margin-left: 40px; 
-    margin-right: 40px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    max-height: 900px;  
+    max-width: 600px;
+    padding-left: 30px; 
+    padding-right: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
 }
 
+h1 {
+    color: #0284c7;
+    font-size: 20px;
+    font-weight:700;
+    margin-bottom: 10px;
+    padding-left: 13px;
+}
 
+.about-person {
+    max-width: 510px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    border-bottom: #e5e5e5;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+    
+    
+input {
+    padding: 10px;
+    border-radius: 6px;
+    border: #e5e5e5;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 1px 1px 1px 1px #f5f5f5;
+    
+    
+}
+
+.about-person input {
+    width: 220px;
+}
+
+.about-person-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 13px;
+    color: var(--main-text-color);
+    font-size: 15px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.adress {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: #e5e5e5;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.adress-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;  
+}
+
+.adress-content input {
+
+}
+
+/*посмотреть урок про сетку + выровнить формы*/
 
