@@ -5,18 +5,22 @@ html {
     --button-color:#0ea5e9;
     background-color:#f5f5f5;
     font-family: 'Roboto', sans-serif;
+    
 }
+ *{
+    box-sizing: border-box;
+ }
 
 .main-container {
-    width: 1000px;
+    width: 1030px;
     height: 900px;
     margin: auto;
     margin-top: 80px;
     margin-bottom: 80px;
     border-radius: 8px;
-    box-sizing: border-box;
     display: flex;
     flex-direction: row;
+    
    
 
 }
@@ -32,31 +36,34 @@ button {
     border-width: 1px;
     font-size: 14px;
     font-weight: 600;
+    cursor: pointer;
+    margin-top: 25px;
 
 }
 
 .main-container-image {
     height: 900px;  
-    width: 530px;
+    width: 450px;
     background-image: url(images/mountains-1.jpg);
     background-size: cover;
     background-position: top;
-    box-sizing: border-box;
 }
 
 .main-container-content {
     max-height: 900px;  
-    max-width: 600px;
-    padding-left: 30px; 
-    padding-right: 40px;
+    width: 600px;
+    padding-left: 10px; 
+    padding-right: 10px;
     padding-top: 50px;
     padding-bottom: 50px;
     box-sizing: border-box;
     background-color: white;
     display: flex;
     flex-direction: column;
+    padding: 40px;
 
 }
+
 
 h1 {
     color: #0284c7;
@@ -67,7 +74,7 @@ h1 {
 }
 
 .about-person {
-    max-width: 510px;
+    max-width: 600px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -76,6 +83,10 @@ h1 {
     border-bottom: #e5e5e5;
     border-bottom-width: 1px;
     border-bottom-style: solid;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 610px;
+
 }
     
     
@@ -86,22 +97,20 @@ input {
     border-width: 1px;
     border-style: solid;
     box-shadow: 1px 1px 1px 1px #f5f5f5;
-    
-    
+    cursor: pointer;
+      
 }
 
-.about-person input {
-    width: 220px;
-}
 
 .about-person-content {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     margin-top: 15px;
-    margin-bottom: 10px;
-    margin-left: 13px;
+    margin-bottom: 5px;
     color: var(--main-text-color);
     font-size: 15px;
+    width: calc((100% - 20px * 1) / 2);
 }
 
 h2 {
@@ -122,15 +131,121 @@ h2 {
 
 }
 
-.adress-content {
+.adress-container {
+    max-width: 610px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;  
+    flex-wrap: wrap; 
+    flex-basis: 0;
+    flex-grow: 1;
+    gap: 20px;
+
+
 }
 
-.adress-content input {
+/*
+div {
+    border: #171717;
+    border-width: 1px;
+    border-style: solid;
+}*/
+
+
+
+
+
+.adress-content-adress-delivery{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    font-size: 14px;
+}
+
+.adress-content-adress-delivery label{
+    padding-bottom: 5px;
+}
+
+.adress-content {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 20px * 2) / 3);
+    font-size: 14px;
 
 }
 
-/*посмотреть урок про сетку + выровнить формы*/
+.notification {
+    display: flex;
+    flex-direction: column;
+    max-width: 610px; 
+    margin-top: 30px; 
+    border-bottom: #e5e5e5;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
 
+.notification-choices {
+    display: flex;
+    flex-direction: column; 
+}
+
+p {
+    font-size: 13px;
+    color: var(--text-color);
+    margin-bottom: 5px;
+    line-height: 20px;
+}
+
+.notification-choices {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: #e5e5e5;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    
+}
+
+.adress-content label{
+    padding-bottom: 5px;
+}
+
+.about-person-content label{
+    padding-bottom: 5px;
+}
+
+.notification-choice {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    
+    
+}
+
+.checkbox {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-style: solid;
+    border-color: var(--button-color);
+    border-width: 1px;
+    margin-right: 15px;
+    
+}
+
+.checkbox:checked {
+background-color: #0284c7;
+background-image: url(images/check_icon.png);
+background-size: contain;
+}
+
+.notification-choice label {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+label {
+    font-weight: 500;
+    color:#2e2a2a;
+}
