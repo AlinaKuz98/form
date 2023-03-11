@@ -258,6 +258,7 @@ button:hover {
 
 input:focus {
     background-color: #ecf7fc;
+    outline: thick double #32a1ce;
 
 }
 
